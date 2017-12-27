@@ -21490,8 +21490,8 @@ Source: &lt;a href="http://www.farnell.com/datasheets/391098.pdf"&gt; Data sheet
 <instance part="GND10" gate="1" x="88.9" y="132.08"/>
 <instance part="SUPPLY8" gate="G$1" x="52.07" y="154.94" rot="R90"/>
 <instance part="LCD0" gate="A" x="-20.32" y="87.63" rot="R180"/>
-<instance part="GND11" gate="1" x="-20.32" y="64.77" rot="R270"/>
-<instance part="SUPPLY9" gate="G$1" x="-19.05" y="73.66" rot="R90"/>
+<instance part="GND11" gate="1" x="-25.4" y="64.77" rot="R270"/>
+<instance part="SUPPLY9" gate="G$1" x="-22.86" y="73.66" rot="R90"/>
 <instance part="SUPPLY10" gate="G$1" x="39.37" y="69.85" rot="R270"/>
 <instance part="R5" gate="G$1" x="22.86" y="67.31" rot="R180"/>
 <instance part="R6" gate="G$1" x="22.86" y="64.77" rot="R180"/>
@@ -21608,13 +21608,12 @@ Source: &lt;a href="http://www.farnell.com/datasheets/391098.pdf"&gt; Data sheet
 <junction x="88.9" y="149.86"/>
 </segment>
 <segment>
-<pinref part="LCD0" gate="A" pin="2"/>
-<wire x1="-17.78" y1="85.09" x2="-7.62" y2="85.09" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="85.09" x2="-7.62" y2="64.77" width="0.1524" layer="91"/>
 <pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="-7.62" y1="64.77" x2="-17.78" y2="64.77" width="0.1524" layer="91"/>
-<junction x="-17.78" y="64.77"/>
-<junction x="-17.78" y="85.09"/>
+<wire x1="-7.62" y1="82.55" x2="-7.62" y2="64.77" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="64.77" x2="-22.86" y2="64.77" width="0.1524" layer="91"/>
+<junction x="-22.86" y="64.77"/>
+<pinref part="LCD0" gate="A" pin="1"/>
+<wire x1="-7.62" y1="82.55" x2="-17.78" y2="82.55" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="S2" gate="G$1" pin="1"/>
@@ -21799,14 +21798,13 @@ Source: &lt;a href="http://www.farnell.com/datasheets/391098.pdf"&gt; Data sheet
 <junction x="54.61" y="154.94"/>
 </segment>
 <segment>
-<pinref part="LCD0" gate="A" pin="1"/>
 <pinref part="SUPPLY9" gate="G$1" pin="VDD"/>
-<wire x1="-17.78" y1="82.55" x2="-10.16" y2="82.55" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="82.55" x2="-10.16" y2="67.31" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="67.31" x2="-16.51" y2="67.31" width="0.1524" layer="91"/>
-<wire x1="-16.51" y1="67.31" x2="-16.51" y2="73.66" width="0.1524" layer="91"/>
-<junction x="-16.51" y="73.66"/>
-<junction x="-17.78" y="82.55"/>
+<wire x1="-11.43" y1="85.09" x2="-11.43" y2="67.31" width="0.1524" layer="91"/>
+<wire x1="-11.43" y1="67.31" x2="-16.51" y2="67.31" width="0.1524" layer="91"/>
+<wire x1="-16.51" y1="67.31" x2="-20.32" y2="73.66" width="0.1524" layer="91"/>
+<junction x="-20.32" y="73.66"/>
+<pinref part="LCD0" gate="A" pin="2"/>
+<wire x1="-11.43" y1="85.09" x2="-17.78" y2="85.09" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
@@ -22237,7 +22235,6 @@ Source: &lt;a href="http://www.farnell.com/datasheets/391098.pdf"&gt; Data sheet
 </sheet>
 </sheets>
 <errors>
-<approved hash="102,1,203.2,40.64,AGND,GND,,,,"/>
 <approved hash="102,1,99.06,68.58,AGND,GND,,,,"/>
 <approved hash="104,1,10.16,114.3,IC1,VSS,GND,,,"/>
 <approved hash="104,1,10.16,111.76,IC1,VCAP,N$35,,,"/>
@@ -22254,19 +22251,16 @@ Source: &lt;a href="http://www.farnell.com/datasheets/391098.pdf"&gt; Data sheet
 <approved hash="104,1,147.32,27.94,U$3G$2,DVDD,VDD,,,"/>
 <approved hash="108,1,-11.43,111.76,GND,,,,,"/>
 <approved hash="108,1,144.78,22.86,VDD,,,,,"/>
-<approved hash="108,1,1.27,109.22,VDD,,,,,"/>
-<approved hash="108,1,144.78,38.1,VDD,,,,,"/>
-<approved hash="108,1,36.83,64.77,VDD,,,,,"/>
-<approved hash="108,1,144.78,40.64,VDD,,,,,"/>
-<approved hash="108,1,36.83,67.31,VDD,,,,,"/>
-<approved hash="108,1,-7.62,109.22,VDD,,,,,"/>
-<approved hash="108,1,144.78,25.4,VDD,,,,,"/>
 <approved hash="108,1,144.78,27.94,VDD,,,,,"/>
+<approved hash="108,1,144.78,25.4,VDD,,,,,"/>
+<approved hash="108,1,36.83,67.31,VDD,,,,,"/>
+<approved hash="108,1,144.78,40.64,VDD,,,,,"/>
+<approved hash="108,1,144.78,38.1,VDD,,,,,"/>
+<approved hash="108,1,1.27,109.22,VDD,,,,,"/>
+<approved hash="108,1,-7.62,109.22,VDD,,,,,"/>
+<approved hash="108,1,36.83,64.77,VDD,,,,,"/>
 <approved hash="108,1,116.84,68.58,N$2,,,,,"/>
 <approved hash="108,1,116.84,58.42,N$6,,,,,"/>
-<approved hash="113,1,-35.56,110.326,C14,,,,,"/>
-<approved hash="113,1,35.8496,141.012,SV1,,,,,"/>
-<approved hash="113,1,-18.0171,84.8639,JP1,,,,,"/>
 <approved hash="113,1,22.86,63.6803,R6,,,,,"/>
 <approved hash="113,1,22.86,61.1403,R7,,,,,"/>
 </errors>

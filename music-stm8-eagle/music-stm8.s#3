@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -21499,7 +21499,7 @@ Source: &lt;a href="http://www.farnell.com/datasheets/391098.pdf"&gt; Data sheet
 <instance part="LED1" gate="G$1" x="6.35" y="72.39" rot="R180"/>
 <instance part="LED2" gate="G$1" x="1.27" y="72.39" rot="R180"/>
 <instance part="LED3" gate="G$1" x="-3.81" y="72.39" rot="R180"/>
-<instance part="C15" gate="G$1" x="-2.54" y="111.76" rot="R90"/>
+<instance part="C15" gate="G$1" x="0" y="111.76" rot="R90"/>
 <instance part="GND12" gate="1" x="48.26" y="62.23" rot="R270"/>
 <instance part="S2" gate="G$1" x="74.93" y="63.5" rot="R270"/>
 <instance part="S3" gate="G$1" x="58.42" y="60.96" rot="R270"/>
@@ -21570,9 +21570,9 @@ Source: &lt;a href="http://www.farnell.com/datasheets/391098.pdf"&gt; Data sheet
 <wire x1="-11.43" y1="99.06" x2="-11.43" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="C15" gate="G$1" pin="1"/>
 <wire x1="-11.43" y1="111.76" x2="-11.43" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="111.76" x2="-11.43" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="111.76" x2="-11.43" y2="111.76" width="0.1524" layer="91"/>
 <junction x="-11.43" y="114.3"/>
-<junction x="-5.08" y="111.76"/>
+<junction x="-2.54" y="111.76"/>
 </segment>
 <segment>
 <pinref part="C13" gate="G$1" pin="1"/>
@@ -22172,8 +22172,8 @@ Source: &lt;a href="http://www.farnell.com/datasheets/391098.pdf"&gt; Data sheet
 <segment>
 <pinref part="IC1" gate="G$1" pin="VCAP"/>
 <pinref part="C15" gate="G$1" pin="2"/>
-<wire x1="10.16" y1="111.76" x2="2.54" y2="111.76" width="0.1524" layer="91"/>
-<junction x="2.54" y="111.76"/>
+<wire x1="10.16" y1="111.76" x2="5.08" y2="111.76" width="0.1524" layer="91"/>
+<junction x="5.08" y="111.76"/>
 </segment>
 </net>
 <net name="N$36" class="0">
@@ -22250,15 +22250,15 @@ Source: &lt;a href="http://www.farnell.com/datasheets/391098.pdf"&gt; Data sheet
 <approved hash="104,1,147.32,38.1,U$3G$2,AVDD,VDD,,,"/>
 <approved hash="104,1,147.32,27.94,U$3G$2,DVDD,VDD,,,"/>
 <approved hash="108,1,-11.43,111.76,GND,,,,,"/>
-<approved hash="108,1,144.78,22.86,VDD,,,,,"/>
-<approved hash="108,1,144.78,27.94,VDD,,,,,"/>
-<approved hash="108,1,144.78,25.4,VDD,,,,,"/>
-<approved hash="108,1,36.83,67.31,VDD,,,,,"/>
-<approved hash="108,1,144.78,40.64,VDD,,,,,"/>
-<approved hash="108,1,144.78,38.1,VDD,,,,,"/>
-<approved hash="108,1,1.27,109.22,VDD,,,,,"/>
 <approved hash="108,1,-7.62,109.22,VDD,,,,,"/>
+<approved hash="108,1,36.83,67.31,VDD,,,,,"/>
 <approved hash="108,1,36.83,64.77,VDD,,,,,"/>
+<approved hash="108,1,144.78,27.94,VDD,,,,,"/>
+<approved hash="108,1,1.27,109.22,VDD,,,,,"/>
+<approved hash="108,1,144.78,38.1,VDD,,,,,"/>
+<approved hash="108,1,144.78,40.64,VDD,,,,,"/>
+<approved hash="108,1,144.78,22.86,VDD,,,,,"/>
+<approved hash="108,1,144.78,25.4,VDD,,,,,"/>
 <approved hash="108,1,116.84,68.58,N$2,,,,,"/>
 <approved hash="108,1,116.84,58.42,N$6,,,,,"/>
 <approved hash="113,1,22.86,63.6803,R6,,,,,"/>
