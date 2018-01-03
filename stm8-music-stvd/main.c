@@ -239,17 +239,7 @@ void main(void)
 		pf_read(buf,11,0);
 		OLED_ShowString(0,0,buf,16);
 	}
-	a=pf_open("LETTER.TXT");
 	
-	if(a==FR_DISK_ERR)OLED_ShowString(0,2,"DISK_ERR",16);
-	else if(a==FR_NOT_ENABLED)OLED_ShowString(0,2,"NOT_ENABLED",16);
-	else if(a==FR_NO_FILE)OLED_ShowString(0,2,"DID NOT FIND",16);
-	else if(a==FR_OK){
-		OLED_ShowString(0,2,"OPENED",16);
-		pf_read(textbuf,fs.fsize,&textlen);
-		for(i=0;i<textlen;i++)
-		textbuf[i]--;
-	}
 	delay_ms(500);
 	OLED_Clear();
 	//OLED_Set_Pos(1,0);
@@ -262,10 +252,10 @@ void main(void)
 		if(GPIO_ReadInputPin(GPIOF,GPIO_PIN_4)==1)
 			GPIO_WriteHigh(GPIOB,GPIO_PIN_3);
 		else if(GPIO_ReadInputPin(GPIOF,GPIO_PIN_4)==0){
-			  playMP3File("Hymn.mp3");
-				playMP3File("MAGIC.MP3");
-				playMP3File("MIRACLE.MP3");
-				playMP3File("MENDSV.MP3");
+			  	
+				
+				
+				//playMP3File("XXX.MP3");
 		}
 		//if(GPIO_ReadInputPin(GPIOD,GPIO_PIN_0)==1)GPIO_WriteLow(GPIOB,GPIO_PIN_1);
   }
