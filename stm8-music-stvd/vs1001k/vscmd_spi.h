@@ -12,9 +12,9 @@
 	//GPIO_Init(GPIOC,GPIO_PIN_2,GPIO_MODE_IN_PU_NO_IT);          //C2 DREQ
 extern unsigned char DUS_C;
 extern void delay_us();
-#define VSC_MISO_RE()  (GPIOC->IDR&GPIO_PIN_7)>>4
-#define VSC_MOSI_H()   GPIOC->ODR|=GPIO_PIN_6
-#define VSC_MOSI_L()   GPIOC->ODR&=~GPIO_PIN_6
+#define VSC_MISO_RE()  (GPIOC->IDR&GPIO_PIN_6)>>4
+#define VSC_MOSI_H()   GPIOC->ODR|=GPIO_PIN_7
+#define VSC_MOSI_L()   GPIOC->ODR&=~GPIO_PIN_7
 #define VSC_CS_H()     GPIOC->ODR|=GPIO_PIN_4
 #define VSC_CS_L()     GPIOC->ODR&=~GPIO_PIN_4
 #define VSC_SCK_H()    GPIOC->ODR|=GPIO_PIN_5
